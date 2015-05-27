@@ -61,7 +61,7 @@ public class YSystem extends JFrame{
 		text.setEditable(false);
 		text.setFont(new Font("",Font.BOLD,16));
 		
-		//text.setBackground(Color.cyan);
+		text.setBackground(Color.cyan);
 		spanel=new ScrollPane(ScrollPane.SCROLLBARS_AS_NEEDED);
 		spanel.add(text);
 		
@@ -82,7 +82,6 @@ public class YSystem extends JFrame{
 		
 		button3.addActionListener(new ActionListener(){
 
-			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				System.exit(0);
 				
@@ -101,7 +100,6 @@ public class YSystem extends JFrame{
 	}
 	class ReSet implements ActionListener{
 
-		@Override
 		public void actionPerformed(ActionEvent e) {
 			tf1.setText(null);
 			tf2.setText(null);
@@ -115,7 +113,6 @@ public class YSystem extends JFrame{
 	
 	class Acquire implements ActionListener{
 
-		@Override
 		public void actionPerformed(ActionEvent e) {
 			String price1=tf1.getText();
 			String num1=tf2.getText();
